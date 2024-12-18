@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CIP English - Reviews</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="top-header">
+      <nav>
+        <ul>
+          <li><a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="#" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="#" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <header>
+      <!-- Navbar with Hamburger Icon -->
+      <nav>
+        <div class="logo">
+            <h1>This website is under construction</br>
+                and is expected to be completed by February</h1>
+          <!-- Placeholder for Logo -->
+        </div>
+    
+        <!-- Hamburger Icon for Mobile -->
+        <div class="hamburger" onclick="toggleMenu()">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+    
+        <ul class="menu" id="menu">
+          <li>
+            <a href="index.html" class="disabled">Home</a>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="disabled">Services</a>
+            <ul class="dropdown-menu">
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="disabled">Facilities</a>
+            <ul class="dropdown-menu">
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="disabled active">News & Notice</a>
+            <ul class="dropdown-menu">
+              <li><a href="noticepage1.html">Notice</a></li>
+              <li><a href="faqpage1.html">FAQ</a></li>
+              <li><a href="reviewpage1.html">Reviews</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="disabled">Teachers</a>
+            <ul class="dropdown-menu">
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="disabled">Promotion</a>
+            <ul class="dropdown-menu">
+              <a href="promopage1.html">Promo</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="disabled">Registration</a>
+            <ul class="dropdown-menu">
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h2 class="rev">Reviews</h2>
+   <!--  <div class="containerrev">
+        <p class="review-subtitle">What Our Customers Say</p>
+      </div>-->
+      
+      
+      <div class="review-container">
+        <!-- Review Card 1 -->
+        <div class="review-card">
+          <div class="review-header">
+            <img src="p1.png" alt="Student Picture" class="student-img">
+            <div class="review-info">
+              <h3 class="student-name">John Doe</h3>
+              <p class="student-nationality"><span class="flag-icon flag-icon-us"></span> USA</p>
+            </div>
+          </div>
+          <div class="star-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <div class="course-name">
+            <p>English Communication</p>
+          </div>
+          <div class="review-comment">
+            <p class="review-text">
+              "This course was incredibly insightful. The material was presented clearly, and the instructor was very engaging."
+              <a class="read-more-btn" onclick="openModal('John Doe', 'This course was incredibly insightful. The material was presented clearly, and the instructor was very engaging.', '★★★★★', '<span class=\'flag-icon flag-icon-us\'></span> USA', 'English Communication')">&nbsp;See more...</a>
+            </p>
+          </div>
+        </div>
+      
+        <!-- Review Card 2 -->
+        <div class="review-card">
+          <div class="review-header">
+            <img src="p1.png" alt="Student Picture" class="student-img">
+            <div class="review-info">
+              <h3 class="student-name">Jane Smith</h3>
+              <p class="student-nationality"><span class="flag-icon flag-icon-ca"></span> Canada</p>
+            </div>
+          </div>
+          <div class="star-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <div class="course-name">
+            <p>Business English</p>
+          </div>
+          <div class="review-comment">
+            <p class="review-text">
+              "The course offered a lot of practical examples. I appreciated the hands-on approach and the attention to detail."
+              <a class="read-more-btn" onclick="openModal('Jane Smith', 'The course offered a lot of practical examples. I appreciated the hands-on approach and the attention to detail.', '★★★★☆', '<span class=\'flag-icon flag-icon-ca\'></span> Canada', 'Business English')">&nbsp;See more...</a>
+            </p>
+          </div>
+        </div>
+      
+        <!-- Review Card 3 -->
+        <div class="review-card">
+          <div class="review-header">
+            <img src="p1.png" alt="Student Picture" class="student-img">
+            <div class="review-info">
+              <h3 class="student-name">Ali Khan</h3>
+              <p class="student-nationality"><span class="flag-icon flag-icon-pk"></span> Pakistan</p>
+            </div>
+          </div>
+          <div class="star-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <div class="course-name">
+            <p>IELTS Preparation</p>
+          </div>
+          <div class="review-comment">
+            <p class="review-text">
+              "The instructor was very knowledgeable and the course was well-structured. I would highly recommend it to others."
+              <a class="read-more-btn" onclick="openModal('Ali Khan', 'The instructor was very knowledgeable and the course was well-structured. I would highly recommend it to others.', '★★★★★', '<span class=\'flag-icon flag-icon-pk\'></span> Pakistan', 'IELTS Preparation')">&nbsp;See more...</a>
+            </p>
+          </div>
+        </div>
+      
+        <!-- Review Card 4 -->
+        <div class="review-card">
+          <div class="review-header">
+            <img src="p1.png" alt="Student Picture" class="student-img">
+            <div class="review-info">
+              <h3 class="student-name">Maria Gonzalez</h3>
+              <p class="student-nationality"><span class="flag-icon flag-icon-mx"></span> Mexico</p>
+            </div>
+          </div>
+          <div class="star-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <div class="course-name">
+            <p>English for Business</p>
+          </div>
+          <div class="review-comment">
+            <p class="review-text">
+              "A wonderful experience! The activities were interactive and engaging. Highly recommended."
+              <a class="read-more-btn" onclick="openModal('Maria Gonzalez', 'A wonderful experience! The activities were interactive and engaging. Highly recommended.', '★★★★☆', '<span class=\'flag-icon flag-icon-mx\'></span> Mexico', 'English for Business')">&nbsp;See more...</a>
+            </p>
+          </div>
+        </div>
+      
+        <!-- Review Card 5 -->
+        <div class="review-card">
+          <div class="review-header">
+            <img src="p1.png" alt="Student Picture" class="student-img">
+            <div class="review-info">
+              <h3 class="student-name">Emily Brown</h3>
+              <p class="student-nationality"><span class="flag-icon flag-icon-au"></span> Australia</p>
+            </div>
+          </div>
+          <div class="star-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <div class="course-name">
+            <p>TOEFL Preparation</p>
+          </div>
+          <div class="review-comment">
+            <p class="review-text">
+              "The course was thorough and very effective. I feel more confident about taking the test now!"
+              <a class="read-more-btn" onclick="openModal('Emily Brown', 'The course was thorough and very effective. I feel more confident about taking the test now!', '★★★★★', '<span class=\'flag-icon flag-icon-au\'></span> Australia', 'TOEFL Preparation')">&nbsp;See more...</a>
+            </p>
+          </div>
+        </div>
+      
+<!-- Review Card 6 -->
+<div class="review-card">
+  <div class="review-header">
+    <img src="p1.png" alt="Student Picture" class="student-img">
+    <div class="review-info">
+      <h3 class="student-name">Tom Lee</h3>
+      <p class="student-nationality"><span class="flag-icon flag-icon-kr"></span> South Korea</p>
+    </div>
+  </div>
+  <div class="star-rating">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+  </div>
+  <div class="course-name">
+    <p>Pronunciation Mastery</p>
+  </div>
+  <div class="review-comment">
+    <p class="review-text">
+      "This course helped me improve my accent and pronunciation significantly. The instructor was very patient and thorough."
+      <a class="read-more-btn" onclick="openModal('Tom Lee', 'This course helped me improve my accent and pronunciation significantly. The instructor was very patient and thorough.', '★★★★★', '<span class=\'flag-icon flag-icon-kr\'></span> South Korea', 'Pronunciation Mastery')">&nbsp;See more...</a>
+    </p>
+  </div>
+</div>
+
+<!-- Review Card 7 -->
+<div class="review-card">
+  <div class="review-header">
+    <img src="p1.png" alt="Student Picture" class="student-img">
+    <div class="review-info">
+      <h3 class="student-name">Ahmed Hassan</h3>
+      <p class="student-nationality"><span class="flag-icon flag-icon-eg"></span> Egypt</p>
+    </div>
+  </div>
+  <div class="star-rating">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star-half-alt"></i>
+  </div>
+  <div class="course-name">
+    <p>English for Professionals</p>
+  </div>
+  <div class="review-comment">
+    <p class="review-text">
+      "I learned so much from this course. The examples were relatable, and I feel more confident in professional settings."
+      <a class="read-more-btn" onclick="openModal('Ahmed Hassan', 'I learned so much from this course. The examples were relatable, and I feel more confident in professional settings.', '★★★★☆', '<span class=\'flag-icon flag-icon-eg\'></span> Egypt', 'English for Professionals')">&nbsp;See more...</a>
+    </p>
+  </div>
+</div>
+
+<!-- Review Card 8 -->
+<div class="review-card">
+  <div class="review-header">
+    <img src="p1.png" alt="Student Picture" class="student-img">
+    <div class="review-info">
+      <h3 class="student-name">Hiroshi Tanaka</h3>
+      <p class="student-nationality"><span class="flag-icon flag-icon-jp"></span> Japan</p>
+    </div>
+  </div>
+  <div class="star-rating">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+  </div>
+  <div class="course-name">
+    <p>TOEIC Preparation</p>
+  </div>
+  <div class="review-comment">
+    <p class="review-text">
+      "The materials and exercises were excellent. This course gave me the confidence to score high on the TOEIC test."
+      <a class="read-more-btn" onclick="openModal('Hiroshi Tanaka', 'The materials and exercises were excellent. This course gave me the confidence to score high on the TOEIC test.', '★★★★★', '<span class=\'flag-icon flag-icon-jp\'></span> Japan', 'TOEIC Preparation')">&nbsp;See more...</a>
+    </p>
+  </div>
+</div>
+
+<!-- Review Card 9 -->
+<div class="review-card">
+  <div class="review-header">
+    <img src="p1.png" alt="Student Picture" class="student-img">
+    <div class="review-info">
+      <h3 class="student-name">Sofia Rossi</h3>
+      <p class="student-nationality"><span class="flag-icon flag-icon-it"></span> Italy</p>
+    </div>
+  </div>
+  <div class="star-rating">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star-half-alt"></i>
+  </div>
+  <div class="course-name">
+    <p>Conversational English</p>
+  </div>
+  <div class="review-comment">
+    <p class="review-text">
+      "I loved this course! It was fun, interactive, and helped me feel more confident in everyday conversations."
+      <a class="read-more-btn" onclick="openModal('Sofia Rossi', 'I loved this course! It was fun, interactive, and helped me feel more confident in everyday conversations.', '★★★★☆', '<span class=\'flag-icon flag-icon-it\'></span> Italy', 'Conversational English')">&nbsp;See more...</a>
+    </p>
+  </div>
+</div>
+
+
+
+
+      <!-- Modal Structure -->
+      <div class="modal" id="reviewModal">
+        <div class="modal-content">
+          <button class="close-btn" onclick="closeModal()">&times;</button>
+          <h3 id="modalTitle"></h3>
+          <div id="modalText"></div>
+        </div>
+      </div>
+    </main>
+
+
+<Script>
+  // review //
+
+// Function to toggle the navigation menu (for the hamburger menu)
+function toggleMenu() {
+  const menu = document.getElementById("menu");
+  menu.classList.toggle("open");
+}
+
+// Function to open the modal and display the details
+function openModal(name, reviewText, stars, nationality, course) {
+  document.getElementById("modalTitle").textContent = name;
+  document.getElementById("modalText").innerHTML = `
+    <p><strong>Nationality:</strong> ${nationality}</p>
+    <p><strong>Star Rating:</strong> ${stars}</p>
+    <p><strong>Course:</strong> ${course}</p><br>
+    <p><strong>Review:</strong> ${reviewText}</p>
+  `;
+  document.getElementById("reviewModal").style.display = "block";
+}
+
+// Function to close the modal
+function closeModal() {
+  document.getElementById("reviewModal").style.display = "none";
+}
+
+// Close modal if clicked outside the modal content
+window.onclick = function (event) {
+  const modal = document.getElementById("reviewModal");
+  if (event.target === modal) {
+    closeModal();
+  }
+};
+</Script>

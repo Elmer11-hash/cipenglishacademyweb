@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    </head>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CIP English - Promotion</title>
+    <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+      <div class="top-header">
+        <nav>
+          <ul>
+            <li><a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
+          </ul>
+        </nav>
+      </div>
+      
+  
+    </div>
+    <header>
+      <!-- Navbar with Hamburger Icon -->
+      <nav>
+        <div class="logo">
+          <h1>This website is under construction</br>
+            and is expected to be completed by February</h1>
+          <!-- Placeholder for Logo -->
+        </div>
+    
+        <!-- Hamburger Icon for Mobile -->
+        <div class="hamburger" onclick="toggleMenu()">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+    
+        <ul class="menu" id="menu">
+          <li class="dropdown">
+            <a href="index.html" class="disabled">Home</a>
+            <ul class="dropdown-menu">
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="disabled">Services</a>
+            <ul class="dropdown-menu">
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="disabled">Facilities</a>
+            <ul class="dropdown-menu">
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="disabled">News & Notice</a>
+            <ul class="dropdown-menu">
+              <li><a href="noticepage1.html">Notice</a></li>
+              <li><a href="faqpage1.html">FAQ</a></li>
+              <li><a href="reviewpage1.html">Reviews</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="disabled">Teachers</a>
+            <ul class="dropdown-menu">
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="disabled active">Promotion</a>
+            <ul class="dropdown-menu">
+              <li><a href="promopage1.html">Promo</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="disabled">Registration</a>
+            <ul class="dropdown-menu">
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    
+    <main class="promo-section"> 
+        <!-- Existing Promo Section -->
+        <h2 class="promo">
+          <i class=""></i> Promo & Campaign
+        </h2>
+    
+        <div class="button-container">
+          <button class="filter-btn" onclick="filterContent('all')">See All</button>
+          <button class="filter-btn" onclick="filterContent('pro')">Promotion</button>
+          <button class="filter-btn" onclick="filterContent('cam')">Campaign</button>
+        </div>
+        <div class="promo-bg">
+        <!-- Promo content section -->
+
+
+
+
+        <div id="myModal" class="modal">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <img class="modal-content" id="modalImage">
+          <div id="caption"></div>
+      </div> 
+
+<!-- Promo 2: Larger Promotion -->
+<div class="large-promo-container pro" id="promo2">
+  <img src="https://i.imgur.com/gcqeIP0.jpeg" alt="Large Promo Image" class="large-promo-image" onclick="openModal('https://i.imgur.com/gcqeIP0.jpeg', 'Large Promo Image')">
+  <div class="large-promo-details">
+    <div class="promo-header">
+      <h4><a href="promo.html" style="text-decoration: none; color: inherit;">2025 Promo: Native 1:1 + Tuition Discount!</a></h4>
+      <span class="promo-date2">Dec 3, 2024</span>
+    </div>
+    <div class="social-share2">
+      <a href="https://www.facebook.com/sharer/sharer.php?u=YOUR_URL" target="_blank" class="social-button facebook2">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://www.instagram.com/?url=YOUR_URL" target="_blank" class="social-button instagram2">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <button class="social-button copy-link2" onclick="copyLink()">
+        <i class="fas fa-link"></i>
+      </button>
+    </div>
+    <p style="line-height: 1.5 !important;">
+      Take your conversation skills to the next level with Native speaker's 1:1 classes! Learn real accents, expressions, and practical communication with CIP English!
+      <a href="promo.html" class="read-more-btn">&nbsp;See more...</a> <br>
+      <a href="path_to_your_file.zip" class="promo-link2" download>Download</a>
+    </p>
+  </div>
+</div>
+          <!-- Promo 1 -->
+          <div class="small-promos-wrapper">
+            <div class="small-promos">
+              
+              <!-- Promo 1: Promotion -->
+              <div class="small-promo-container pro" id="promo1">
+                <img src="https://i.imgur.com/z0Ln20v.jpeg" alt="Promo Image" class="small-promo-image" onclick="openModal('https://i.imgur.com/z0Ln20v.jpeg', 'Promo Image')">
+                <div class="small-promo-details">
+                  <div class="promo-header">
+                    <h4><a href="promo1.html" style="text-decoration: none; color: inherit;">2024 Promotion: Room Upgrade</a></h4>
+                    <span class="promo-date2">Dec 3, 2024</span>
+                  </div>
+                  <div class="social-share1">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=YOUR_URL" target="_blank" class="social-button facebook1">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/?url=YOUR_URL" target="_blank" class="social-button instagram1">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                    <button class="social-button copy-link1" onclick="copyLink()">
+                      <i class="fas fa-link"></i>
+                    </button>
+                  </div>
+                  <p style="line-height: 1.5 !important;">
+                    This promotion is applicable to registrations before November 24, 2024, and the details are as follows.
+                    <a href="promo1.html" class="read-more-btn">&nbsp;See more...</a> <br>
+                    <a href="path_to_your_file.zip" class="promo-link1" download>Download</a>
+                  </p>
+                </div>
+              </div>
+          
+              <!-- Promo 2: Promotion -->
+              <div class="small-promo-container pro" id="promo2">
+                <img src="https://i.imgur.com/opRqJeE.png" alt="Promo Image" class="small-promo-image" onclick="openModal('https://i.imgur.com/opRqJeE.png', 'Promo Image')">
+                <div class="small-promo-details">
+                  <div class="promo-header">
+                    <h4><a href="promo2.html" style="text-decoration: none; color: inherit;">Special Promotion: Single Room Upgrade</a></h4>
+                    <span class="promo-date2">Dec 3, 2024</span>
+                  </div>
+                  <div class="social-share1">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=YOUR_URL" target="_blank" class="social-button facebook1">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/?url=YOUR_URL" target="_blank" class="social-button instagram1">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                    <button class="social-button copy-link1" onclick="copyLink()">
+                      <i class="fas fa-link"></i>
+                    </button>
+                  </div>
+                  <p style="line-height: 1.5 !important;">
+                    This promotion upgrades you to a single room for the price of a double room.
+                    <a href="promo2.html" class="read-more-btn">&nbsp;See more...</a> <br>
+                    <a href="path_to_your_file2.zip" class="promo-link1" download>Download</a>
+                  </p>
+                </div>
+              </div>
+          
+              <!-- Promo 3: Campaign -->
+              <div class="small-promo-container cam" id="promo3">
+                <img src="https://i.imgur.com/YxNuC8d.jpeg" alt="Promo Image" class="small-promo-image" onclick="openModal('https://i.imgur.com/YxNuC8d.jpeg', 'Promo Image')">
+                <div class="small-promo-details">
+                  <div class="promo-header">
+                    <h4><a href="promo3.html" style="text-decoration: none; color: inherit;">2024 Yen-Campaign (Japan)</a></h4>
+                    <span class="promo-date2">Dec 3, 2024</span>
+                  </div>
+                  <div class="social-share1">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=YOUR_URL" target="_blank" class="social-button facebook1">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/?url=YOUR_URL" target="_blank" class="social-button instagram1">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                    <button class="social-button copy-link1" onclick="copyLink()">
+                      <i class="fas fa-link"></i>
+                    </button>
+                  </div>
+                  <p style="line-height: 1.5 !important;">
+                    This is a campaign for the Japanese market, which wants to study abroad but is burdened by the low value of the yen.
+                    <a href="promo3.html" class="read-more-btn">&nbsp;See more...</a> <br>
+                    <a href="path_to_your_file3.zip" class="promo-link1" download>Download</a>
+                  </p>
+                </div>
+              </div>
+
+              
+<!-- Promo 4: Campaign -->
+<div class="small-promo-container cam" id="promo4">
+  <img src="https://i.imgur.com/Go02OGf.jpeg" alt="Promo Image" class="small-promo-image" onclick="openModal('https://i.imgur.com/Go02OGf.jpeg', 'Promo Image')">
+  <div class="small-promo-details">
+    <div class="promo-header">
+      <h4><a href="promo4.html" style="text-decoration: none; color: inherit;">2024-2025 Full Refund Campaign</a></h4>
+      <span class="promo-date2">Dec 3, 2024</span>
+    </div>
+    <div class="social-share1">
+      <a href="https://www.facebook.com/sharer/sharer.php?u=YOUR_URL" target="_blank" class="social-button facebook1">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://www.instagram.com/?url=YOUR_URL" target="_blank" class="social-button instagram1">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <button class="social-button copy-link1" onclick="copyLink()">
+        <i class="fas fa-link"></i>
+      </button>
+    </div>
+    <p style="line-height: 1.5 !important;">
+      For studying abroad, if you are unable to complete your studies due to personal reasons and need a refund, the refund amount is quite small due to many deductions.
+      <a href="promo4.html" class="read-more-btn">&nbsp;See more...</a><br>
+      <a href="path_to_your_file4.zip" class="promo-link1" download>Download</a>
+    </p>
+  </div>
+</div>
+
+<!-- Pagination -->
+<div class="pagination">
+  <a href="#" class="page-link active">1</a>
+  <a href="#" class="page-link">2</a>
+</div>
+    
+   
+
+    
+        <script src="script.js"></script>
+        <!-- Link to the separate JS file -->
+      </body>
+    </html>
+    </main>
